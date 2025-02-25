@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Link } from "react-router-dom";
 
 export default function LoginPage() {
   const form = useForm({
@@ -67,7 +68,7 @@ export default function LoginPage() {
             {/* Sign Up Link */}
             <div className="text-sm text-center text-gray-600 mt-4">
               Don't have an account?
-              <a href="/register" className="text-indigo-600 hover:underline ml-1">Sign up</a>
+              <Link to="/register"className="text-indigo-600 hover:underline ml-1" >Sign up</Link>
             </div>
           </form>
         </CardContent>
